@@ -2,7 +2,9 @@
 
 set -e
 
-npx gh-pages-clean
+# Remove any caches
+rm -rf node_modules/.cache/gh-pages
+
 npx gh-pages \
   --silent \
   --dist public \
