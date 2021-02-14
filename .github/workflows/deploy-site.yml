@@ -1,4 +1,4 @@
-name: Deploy Juke's Kitchen
+name: Deploy Bothy Blend
 
 on:
   push:
