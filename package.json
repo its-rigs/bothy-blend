@@ -1,0 +1,20 @@
+{
+  "name": "bothy-blend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bothy Blend",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "build": "gatsby build --prefix-paths",
+    "develop": "gatsby develop --host=0.0.0.0",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^2.32.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

@@ -1,0 +1,62 @@
+containers:
+  node-env:
+    image: node:latest
+    volumes:
+      - local: <{batect.project_directory}
+        container: /code
+        options: cached
+      - type: cache
+        name: node_modules
+        container: /code/node_modules
+    working_directory: /code
+    enable_init_process: true
+    run_as_current_user:
+      enabled: true
+      home_directory: /home/container-user
+    ports:
+      - 4000:8000
+
+tasks:
+  shell:
+    description: Shell into node environment
+    run:
+      container: node-env
+      command: bash
+
+  install:
+    description: Install dependencies
+    run:
+      container: node-env
+      command: npm install
+
+  develop:
+    description: Run Gatsby in develop mode
+    run:
+      container: node-env
+      command: npm run develop
+
+  clean:
+    description: Clean up all Gatsby artifacts
+    run:
+      container: node-env
+      command: npm run clean
+
+  format:
+    description: Run prettier and format the codebase
+    run:
+      container: node-env
+      command: npm run format
+
+  build:
+    description: Build production site
+    run:
+      container: node-env
+      command: npm run build
+
+  publish:
+    description: Push to github pages
+    run:
+      container: node-env
+      command: ./scripts/publish.sh
+      environment:
+        GH_TOKEN: ${GH_TOKEN}
