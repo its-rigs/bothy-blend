@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{RXBc:function(e,n,t){"use strict";t.r(n);var l=t("q1tI");n.default=function(){return l.createElement("main",null,l.createElement("title",null,"Bothy Blend"),l.createElement("h1",null,"Bothy Blend"),l.createElement("p",null,"Coming soon..."))}}}]);
-//# sourceMappingURL=component---src-pages-index-js-c0dd1393fba7a373db1a.js.map
