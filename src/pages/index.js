@@ -5,16 +5,20 @@ const Navigation = () => {
 
   let active = isOpen ? 'active' : '';
 
+  const menuAnchor = (text, href) => {
+    return (<a href={`#${href}`} onClick={() => setOpen(false)}>{text}</a>);
+  }
+
   return (
     <nav>
       <ul class={`menu ${active}`}>
-        <li class="logo"><a href="#home">Bothy Blend</a></li>
-        <li class="item"><a href="#home">Home</a></li>
-        <li class="item"><a href="#events">Events</a></li>
-        <li class="item"><a href="#find-us">Find Us</a></li>
-        <li class="item"><a href="#about">About</a></li>
-        <li class="item"><a href="#contact">Contact</a></li>
-        <li class="toggle"><a href="#" onClick={() => setOpen(!isOpen)}><i class="fas fa-bars">=</i></a></li>
+        <li class="logo">{menuAnchor("Bothy Blend", "home")}</li>
+        <li class="item">{menuAnchor("Home", "home")}</li>
+        <li class="item">{menuAnchor("Events", "events")}</li>
+        <li class="item">{menuAnchor("Find Us", "find-us")}</li>
+        <li class="item">{menuAnchor("About", "about")}</li>
+        <li class="item">{menuAnchor("Contact", "contact")}</li>
+        <li class="toggle"><button onClick={() => setOpen(!isOpen)}><i class="fas fa-bars">=</i></button></li>
       </ul>
     </nav>
   )
@@ -24,7 +28,7 @@ const Navigation = () => {
 const IndexPage = () => {
   return (
     <React.Fragment>
-      <Navigation/>
+      <Navigation />
 
 
       <main className="grid-container">
