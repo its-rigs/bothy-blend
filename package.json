@@ -13,8 +13,12 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "gatsby": "^2.32.3",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "@fontsource/roboto": "^4.2.2",
+    "gatsby": "^3.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "prettier": "2.2.1"
   }
 }

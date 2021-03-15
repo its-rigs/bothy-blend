@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Bothy Blend",
+    title: 'Bothy Blend',
   },
   pathPrefix: '/bothy-blend',
   plugins: [],
