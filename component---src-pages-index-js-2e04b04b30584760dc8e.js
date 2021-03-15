@@ -1,0 +1,2 @@
+(self.webpackChunkbothy_blend=self.webpackChunkbothy_blend||[]).push([[678],{7704:function(e,l,n){"use strict";n.r(l);var t=n(7294),u=n(4637);l.default=function(){return t.createElement(u.Ar,null,t.createElement(u.VM,null),t.createElement(u.zW,null),t.createElement(u.bh,null),t.createElement(u.CL,null),t.createElement(u.Ub,null))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-2e04b04b30584760dc8e.js.map
