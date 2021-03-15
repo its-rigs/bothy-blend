@@ -12,7 +12,7 @@ html {
 
   /* transparent body background; textarea,select background */
 	--background-color-primary: white;
-	--background-color-secondary: gray;
+	--background-color-secondary: #f6faf5;
 }
 
 
@@ -44,7 +44,6 @@ body {
 
 nav {
   background: rgba(34,34,34,0.85);
-  padding: 0 15px;
 	position: fixed;
 	width: 100%;
   top: 0;
@@ -278,4 +277,23 @@ h1, h2 {
 
 p {
   margin-bottom: 1.5em;
+}
+
+
+
+
+
+
+
+
+/* Events
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.event-card {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1em;
+}
+
+.event-content ul {
+  list-style: none;
+
 }

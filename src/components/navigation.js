@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 export const Navigation = () => {
   const [isOpen, setOpen] = React.useState(false);
@@ -25,7 +27,7 @@ export const Navigation = () => {
           <li class="item">{menuAnchor('Contact', 'contact')}</li>
           <li class="toggle">
             <button onClick={() => setOpen(!isOpen)}>
-              <i class="fas fa-bars">=</i>
+              <FontAwesomeIcon icon={faBars} />
             </button>
           </li>
         </ul>
